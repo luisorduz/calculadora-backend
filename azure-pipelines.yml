@@ -9,7 +9,7 @@ trigger:
 pool:
   vmImage: 'ubuntu-20.04'
   
- stages:
+stages:
 - stage: Install_Java11
   displayName: Install Java11
   jobs:
@@ -21,6 +21,7 @@ pool:
         versionSpec: '11'
         jdkArchitectureOption: 'x64'
         jdkSourceOption: 'PreInstalled'
+
         
 - stage: Clean
   displayName: Clean
